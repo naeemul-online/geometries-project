@@ -16,8 +16,8 @@ function triAngleCalculate(){
     const height = document.getElementById('triangle-height');
     const heightValue = height.value;
     const heightInput = parseFloat(heightValue)
-    const areaTriangle = `Area(A) = ${0.5} x ${baseInput} x ${heightInput} \n Area = ${0.5 * baseInput * heightInput}`
-    document.getElementById("cal-value").innerText = areaTriangle;
+    const areaTriangle = 0.5 * baseInput * heightInput;
+    document.getElementById("triangle-area").innerText = areaTriangle;
     base.value = '';
     height.value = '';
 }
