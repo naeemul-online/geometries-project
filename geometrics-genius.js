@@ -21,3 +21,4 @@ function triAngleCalculate(){
     base.value = '';
     height.value = '';
 }
+

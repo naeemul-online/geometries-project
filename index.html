@@ -11,9 +11,9 @@
 
 <body>
     <!-- Content Container -->
-    <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col lg:flex-row mt-10">
         <!-- Shape container -->
-        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class=" gap-4 flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <!-- Triangle Shape-->
             <div class="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
@@ -26,10 +26,10 @@
                     <span class="ml-4 mr-10">cm</span>
                     <!-- Triangle height -->
                     <input type="text" placeholder="h" class="w-24" id="triangle-height">
-                    <span> cm</span>
+                    <span>cm</span>
                   </div>
                   <div>
-                    <p class="text-2xl">Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
+                    <p class="text-2xl">Area: <span id="triangle-area"></span><span class="ml-2">cm<sup>2</sup></span></p>
                   </div>
 
                   <div class="card-actions">
@@ -38,28 +38,67 @@
                 </div>
               </div>
 
-            <!-- Triangle Shape-->
+            <!-- Rectangle Shape-->
             <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <h2 class="card-title">Rectangle</h2>
+                  <p>Area (A) = w x l</p> 
+                  <div class="flex">
+                    <!-- Rectangle Width Input -->
+                    <input id="rect-width-input" type="text" placeholder="w" class="w-24">
+                    <span class="ml-4 mr-4">cm</span>
+                    <!-- Rectangle Length Input -->
+                    <input id="rect-length-input" type="text" placeholder="l" class="w-24">
+                    <span class="ml-4">cm</span>
+                  </div>
+                  <div>
+                    <p class="text-2xl">Area: <span id="rectangle-area"></span><span class="ml-2">cm<sup>2</sup></span></p>
+                  </div>                
+                  <div class="card-actions">                    
+                    <button id="rectangle-calculate-button" class="btn btn-primary w-full" onclick="areaCalculate()">Calculation</button>
                   </div>
                 </div>
               </div>
-            <!-- Triangle Shape-->
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+              <!-- Parallelogram Shape-->
             <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p>Area (A) = b x h</p>
+                  <div class="flex">
+                    <!-- Parallelogram Width Input -->
+                    <input id="para-width-input" type="text" placeholder="b" class="w-24">
+                    <span class="ml-4 mr-4">cm</span>
+                    <!-- Parallelogram Length Input -->
+                    <input id="para-length-input" type="text" placeholder="h" class="w-24">
+                    <span class="ml-4">cm</span>
+                  </div>
+                  <div>
+                    <p class="text-2xl">Area: <span id="parallelogram-area"></span><span class="ml-2">cm<sup>2</sup></span></p>
+                  </div>   
+                  <div class="card-actions">
+                    <button class="btn btn-primary w-full" onclick="parallelogramAreaCalculate()">Calculation</button>
                   </div>
                 </div>
               </div>
+
+
+
             <!-- Triangle Shape-->
             <div class="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
@@ -84,6 +123,7 @@
         </div>
     </div>
     <script src="geometrics-genius.js"></script>
+    <script src="rectangle.js"></script>
 </body>
 
 </html>
